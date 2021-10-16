@@ -1,0 +1,23 @@
+{
+  "name": "typescript-udemy-course",
+  "version": "1.0.0",
+  "description": "This repo will contain all the project on different branches that i have done in this udemy course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LloydJanseVanRensburg/typescript-udemy-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LloydJanseVanRensburg/typescript-udemy-course/issues"
+  },
+  "homepage": "https://github.com/LloydJanseVanRensburg/typescript-udemy-course#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
