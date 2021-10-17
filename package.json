@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/LloydJanseVanRensburg/typescript-udemy-course#readme",
   "devDependencies": {
+    "@types/node": "^16.11.1",
     "concurrently": "^6.3.0",
     "nodemon": "^2.0.13"
   }
