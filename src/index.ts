@@ -1,30 +1,22 @@
-export class Sorter {
-  collection: number[];
+import { LinkedList } from './LinkedList';
 
-  constructor(collection: number[]) {
-    this.collection = collection;
-  }
+import { CharactersCollection } from './CharcatersCollection';
+import { NumbersCollection } from './NumbersCollection';
 
-  sort(): void {
-    const { length } = this.collection;
+const n = new NumbersCollection([1, 9, 4, 6, -10, 2, 7, 200]);
+n.sort();
+console.log(n.data);
 
-    for (let i = 0; i < length; i++) {
-      for (let j = 0; j < length - i - 1; j++) {
-        let left = this.collection[j];
-        let right = this.collection[j + 1];
+const c = new CharactersCollection('Xoogbywe');
+c.sort();
+console.log(c.data);
 
-        if (left > right) {
-          let temp = left;
-          this.collection[j] = this.collection[j + 1];
-          this.collection[j + 1] = temp;
-        }
-      }
-    }
-  }
-}
+const linkedList = new LinkedList();
 
-const sorter = new Sorter([10, 3, -5, 0]);
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
 
-console.log(sorter.collection);
-sorter.sort();
-console.log(sorter.collection);
+linkedList.sort();
+linkedList.print();
